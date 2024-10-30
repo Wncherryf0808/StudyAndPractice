@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>宏的导入</title>
+</head>
+<body>
+  {% import 'form.html' as form %}
+  <div>
+    <p>用户名：{{ form.input('username') }}</p>
+    <p>密  码：{{ form.input('password') }}</p>
+    <p>登  录：{{ form.input('submit', type='submit', value='登录') }}</p>
+  </div>
+</body>
+</html>

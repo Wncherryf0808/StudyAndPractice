@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过滤器</title>
+</head>
+<body>
+    <p>{{ age|abs }}</p>
+    <p>{{ 'hello'|capitalize }}</p>
+    <p>{{ 'hello'|replace('h', 'x') }}</p>
+    <p>{{ [1, 8, 24, 33, 99]|first }}</p>
+    <p>{{ [1, 8, 24, 33, 99]|last }}</p>
+    <p>{{ [1, 8, 24, 33, 99]|count }}</p>
+    <p>{{ [1, 8, 24, 33, 99]|sort }}</p>
+    <p>{{ [1, 8, 24, 33, 99]|join(',') }}</p>
+    <p>{{ 18.8888|round(2, 'floor') }}</p> <!--保留两位小数-->
+    <p>{{ 18.8888|round }}</p> <!--四舍五入取整-->
+    <p>{{ -2|abs }}</p>
+</body>
+</html>

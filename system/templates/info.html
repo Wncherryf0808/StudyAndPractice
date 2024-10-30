@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>info</title>
+    <style>
+      table {
+        width: 100%;
+        border-clooapse: collapse;
+      }
+      th,td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
+</head>
+<body>
+  <h1 align="center">这是个主界面</h1>
+  <table align="center">
+    <thead>
+      <tr>
+        {% for name in name_list %}
+          <th>{{  name }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+  </table>
+</body>
+</html>

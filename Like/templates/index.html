@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Like System</title>
+</head>
+<body>
+  <h1>Like System</h1>
+  <table border="1">
+    <tr>
+      <th>ID</th>
+      <th>姓名</th>
+      <th>成绩</th>
+      <th>备注</th>
+      <th>点赞</th>
+      <th>操作</th>
+    </tr>
+    {% for i in data %}
+      <tr>
+        <td>{{ i.id }}</td>
+        <td>{{ i.name }}</td>
+        <td>{{ i.score }}</td>
+        <td>{{ i.remark }}</td>
+        <td>{{ i.num }}</td>
+        <td><a href="/dianzan?id={{i.id}}">点赞</a></td>
+      </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
